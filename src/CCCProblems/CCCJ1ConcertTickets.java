@@ -13,7 +13,7 @@ public class CCCJ1ConcertTickets {
  * Reads ticket information, determines whether Besa can purchase
  * the requested tickets, and prints the result.
  *
- * @param args Command-line arguments
+ * @param args Command-line arguments, @return type is void
  */
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
@@ -21,8 +21,10 @@ public class CCCJ1ConcertTickets {
         int besaRequests = input.nextInt();
         int totalTickets = input.nextInt();
         int ticketsSold = input.nextInt();
-        int ticketsRemaining = totalTickets - ticketsSold - besaRequests;
+
         // Calculate how many tickets would remain if Besa purchased the requested number of tickets.
+        int ticketsRemaining = totalTickets - ticketsSold - besaRequests;
+        
         if(ticketsRemaining >= 0){
             System.out.println("Y " + ticketsRemaining);
         }
