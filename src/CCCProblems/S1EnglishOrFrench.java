@@ -1,14 +1,16 @@
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 public class S1EnglishOrFrench {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int textNumLines = input.nextInt();
+    public static void main(String[] args) throws IOException {
+       BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+        int textNumLines = Integer.parseInt(input.readLine());
         int countT = 0;
         int countS = 0;
 
 
-        for(int i = 0; i <= textNumLines; i++){
-            String textLine = input.nextLine();
+        for(int i = 0; i < textNumLines; i++){
+            String textLine = input.readLine();
             String[] characterArray = textLine.split("");
             for(int k = 0; k < characterArray.length; k++){
                 if(characterArray[k].equals("T") || characterArray[k].equals("t")){
@@ -26,6 +28,5 @@ public class S1EnglishOrFrench {
             System.out.println("French");
         }
 
-        input.close();
     }
 }
