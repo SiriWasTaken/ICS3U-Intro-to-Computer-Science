@@ -1,6 +1,14 @@
+/* Name: CCC J2 - Vote Count
+** Author: Sri Ganty
+** Date: July 6, 2026
+** Description:
+*/
 import java.util.Scanner;
-
 public class J2VoteCount{
+    /**
+     * 
+     * @param args, @return type void
+     */
     public static void main(String[] args){
 
         Scanner input = new Scanner(System.in);
@@ -10,7 +18,7 @@ public class J2VoteCount{
         char[] votes = input.next().toCharArray();
 
 
-        for(int i = 0; i >= votes.length; i++){
+        for (int i = 0; i < votes.length; i++){
             if(votes[i] == 'A'){
                 aVotes++;
                 
@@ -29,5 +37,7 @@ public class J2VoteCount{
         else if(aVotes == bVotes){
             System.out.println("Tie");
         }
+
+        input.close();
     }
 }
