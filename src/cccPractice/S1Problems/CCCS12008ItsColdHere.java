@@ -1,3 +1,4 @@
+package cccPractice.S1Problems;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -22,7 +23,7 @@ public class CCCS12008ItsColdHere {
                 break;
             }
         }
-        
+
         String coldestCity = "";
         int minTemp = Integer.MAX_VALUE;
 

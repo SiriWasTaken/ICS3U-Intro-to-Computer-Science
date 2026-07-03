@@ -1,4 +1,4 @@
-package cccPractice;
+package cccPractice.J1Problems;
 public class CCCJ1CellSell{
     /**
      * 
